@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Typing Speed Test</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <img src="./assets/images/logo-large.svg" alt="logo">
+      <p class="personal-best"><img src="./assets/images/icon-personal-best.svg" alt="">Personal Best:<strong id="bestScore"> 0 WPM</strong></p>
+    </header>
+
+    <div class="stats">
+      <div>WPM: <span id="wpm">0</span></div>
+      <div>Accuracy: <span id="accuracy">100%</span></div>
+      <div>Time: <span id="time">60</span>s</div>
+    </div>
+
+    <div class="controls space-between">
+      <div>
+        Difficulty:
+        <button data-difficulty="easy">Easy</button>
+        <button data-difficulty="medium" class="active">Medium</button>
+        <button data-difficulty="hard">Hard</button>
+      </div>
+      <div>
+        Mode:
+        <button data-mode="timer">Timed (60s)</button>
+        <button data-mode="para">Paragraph</button>
+      </div>
+    </div>
+
+    <div class="typing-area">
+      <div id="textDisplay" class="text-display"></div>
+
+      <div id="overlay" class="overlay">
+        <button id="startBtn" class="start-btn">Start Test</button>
+        <p>Or click text to begin</p>
+      </div>
+    </div>
+
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
